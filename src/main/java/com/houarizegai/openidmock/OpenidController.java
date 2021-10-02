@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class OpenidController {
 
-    private static final String BASE_URL = "http://localhost:9999";
+    private static final String BASE_URL = "http://openid-mock.herokuapp.com";
     private static final String EMAIL = "h.zegai@smartest.dz";
 
     @PostMapping(value = "/oauth/token", produces = MediaType.APPLICATION_JSON_VALUE)
