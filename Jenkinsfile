@@ -28,7 +28,7 @@ pipeline {
             steps {
                 echo 'deploy the app..'
                 withCredentials ([
-                    usernamePassword(credentials: 'server-credentials', usernameVariable: USER, passwordVariable: PASS)
+                    usernamePassword(credentials: 'server-credentials', usernameVariable: 'USER', passwordVariable: 'PASS')
                 ]) {
                     sh "my script here ${USER} ${PASS}"
                 }
