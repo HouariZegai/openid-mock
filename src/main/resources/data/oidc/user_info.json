@@ -1,0 +1,15 @@
+{
+    "sub": "00uid4BxXw6I6TV4m0g3",
+    "name": "John Doe",
+    "nickname": "Jimmy",
+    "given_name": "John",
+    "middle_name": "James",
+    "family_name": "Doe",
+    "profile": "https://example.com/john.doe",
+    "zoneinfo": "America/Los_Angeles",
+    "locale": "en-US",
+    "updated_at": 1311280970,
+    "email": "houarizegai14@gmail.com",
+    "email_verified": true,
+    "phone_number": "+1 (425) 555-1212"
+}

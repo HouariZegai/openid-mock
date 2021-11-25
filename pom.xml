@@ -13,6 +13,12 @@
     <version>0.0.1-SNAPSHOT</version>
     <name>openid-mock</name>
     <description>openid-mock</description>
+
+    <properties>
+        <java.compile.target>17</java.compile.target>
+        <java.compile.source>17</java.compile.source>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
