@@ -35,15 +35,4 @@ pipeline {
             }
         }
     }
-
-    post {
-        always {
-
-        }
-
-        failure {
-
-        }
-    }
-
 }
