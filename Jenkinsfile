@@ -11,7 +11,8 @@ pipeline {
 
         stage("build") {
             steps {
-                echo 'build the app..'
+                sh "mvn -version"
+                sh "mvn clean install"
             }
         }
 
@@ -32,9 +33,15 @@ pipeline {
                 withCredentials ([
                     usernamePassword(credentialsId: 'server-credentials', usernameVariable: 'USER', passwordVariable: 'PASS')
                 ]) {
-                    sh "my script here ${USER} ${PASS}"
+                    echo "my script here ${USER} ${PASS}"
                 }
             }
+        }
+    }
+
+    post {
+        always {
+            cleanWs()
         }
     }
 }
