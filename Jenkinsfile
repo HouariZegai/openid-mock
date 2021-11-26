@@ -1,8 +1,9 @@
 pipeline {
-    agent any
-
-    tools {
-        maven 'maven-3.8.4'
+    agent {
+        docker {
+            image "maven:3.8.4-openjdk-17-slim"
+            label "docker"
+        }
     }
 
     parameters {
