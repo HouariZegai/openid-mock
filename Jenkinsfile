@@ -15,6 +15,7 @@ pipeline {
 
         stage("build") {
             steps {
+                echo "building the app version: ${VERSION}"
                 sh "mvn -version"
                 sh "mvn clean install"
             }
