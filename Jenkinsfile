@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        maven
+        maven 'maven-3.8.4'
     }
 
     parameters {
